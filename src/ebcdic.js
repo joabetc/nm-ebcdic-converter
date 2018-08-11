@@ -12,5 +12,8 @@ module.exports = {
         ret = key;
     });
     return ret;
+  },
+  getCharFromHex: function(hex) {
+    return String.fromCharCode(parseInt(hex, 16));
   }
 }
