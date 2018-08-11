@@ -14,4 +14,10 @@ describe('ebcdic', function() {
       assert.equal(ebcdic.fromASCII('F'), 'C6');
     });
   });
+
+  context('when converting from Hex to Char', function() {
+    it('should return "F" from 70', function() {
+      assert.equal(ebcdic.getCharFromHex(70), 'F');
+    });
+  });
 });
