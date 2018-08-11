@@ -16,8 +16,8 @@ describe('ebcdic', function() {
   });
 
   context('when converting from Hex to Char', function() {
-    it('should return "F" from 70', function() {
-      assert.equal(ebcdic.getCharFromHex(70), 'F');
+    it('should return "F" from 46', function() {
+      assert.equal(ebcdic.getCharFromHex(46), 'F');
     });
   });
 });
