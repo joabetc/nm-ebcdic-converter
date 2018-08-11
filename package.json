@@ -4,7 +4,7 @@
   "description": "A simple Node module for converting EBCDIC char to ASCII char and vice-versa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "Node",
@@ -12,5 +12,8 @@
     "ASCII"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
 }
