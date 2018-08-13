@@ -9,6 +9,9 @@ class EBCDIC {
     return this.getCharFromHex(map.get(char));
   }
   fromASCII(char) {
+    if (char.length > 1) {
+      throw new Error('Invalid char sequence size');
+    }
     let ret;
     map.forEach((value, key, map) => {
       if (this.getCharFromHex(value) === char)
