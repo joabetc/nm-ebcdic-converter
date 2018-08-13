@@ -7,6 +7,9 @@ describe('ebcdic', function() {
     it('should return F for C6', function() {
       assert.equal(ebcdic.toASCII('C6'), 'F');
     });
+    it('should return error for values with more than 2 characters', function() {
+      assert.throws(function() { ebcdic.toASCII('C66'); }, Error, 'Invalid Char Sequence');
+    });
   });
 
   context('when converting from ASCII', function() {
@@ -16,7 +19,7 @@ describe('ebcdic', function() {
   });
 
   context('when converting from Hex to Char', function() {
-    it('should return "F" from 46', function() {
+    it('should return F from 46', function() {
       assert.equal(ebcdic.getCharFromHex(46), 'F');
     });
   });
