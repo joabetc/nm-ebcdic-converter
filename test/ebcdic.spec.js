@@ -16,6 +16,9 @@ describe('ebcdic', function() {
     it('should return C6 for F', function() {
       assert.equal(ebcdic.fromASCII('F'), 'C6');
     });
+    it('should return error for values with more than 1 character', function() {
+      assert.throws(function() { ebcdic.fromASCII('FA'); }, Error, 'Invalid Char sequence size');
+    });
   });
 
   context('when converting from Hex to Char', function() {
