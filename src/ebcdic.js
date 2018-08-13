@@ -3,6 +3,9 @@ map.set('C6', 46);
 
 class EBCDIC {
   toASCII(char) {
+    if (char.length > 2) {
+      throw new Error('Invalid Char Sequence');
+    }
     return this.getCharFromHex(map.get(char));
   }
   fromASCII(char) {
