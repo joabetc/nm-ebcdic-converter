@@ -8,7 +8,7 @@ describe('ebcdic', function() {
       assert.equal(ebcdic.toASCII('C6'), 'F');
     });
     it('should return error for values with more than 2 characters', function() {
-      assert.throws(function() { ebcdic.toASCII('C66'); }, Error, 'Invalid Char Sequence');
+      assert.throws(function() { ebcdic.toASCII('C66'); }, Error, "Invalid Char Sequence");
     });
   });
 
@@ -17,7 +17,7 @@ describe('ebcdic', function() {
       assert.equal(ebcdic.fromASCII('F'), 'C6');
     });
     it('should return error for values with more than 1 character', function() {
-      assert.throws(function() { ebcdic.fromASCII('FA'); }, Error, 'Invalid Char sequence size');
+      assert.throws(function() { ebcdic.fromASCII('FA'); }, Error, "Invalid char sequence size");
     });
   });
 
