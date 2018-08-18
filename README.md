@@ -1,4 +1,4 @@
-"# nm-ebcdic-converter" 
+# nm-ebcdic-converter 
 A simple Node module for converting EBCDIC char to ASCII char and vice-versa.
 
 # Technologies/Languages
