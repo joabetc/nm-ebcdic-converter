@@ -2,7 +2,8 @@
   "name": "nm-ebcdic-converter",
   "version": "1.0.0",
   "description": "A simple Node module for converting EBCDIC char to ASCII char and vice-versa",
-  "private": true,
+  "main": "dist/main.js",
+  "module": "src/ebcdic.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "test": "mocha",
@@ -13,7 +14,7 @@
     "EBCDIC",
     "ASCII"
   ],
-  "author": "",
+  "author": "Joabe Costa <joabetc@hotmail.com> (http://www.linkedin.com/in/joabecosta)",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",

@@ -3,8 +3,10 @@ const path = require('path');
 module.exports = {
   entry: './src/ebcdic.js',
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    library: 'EBCDIC',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
