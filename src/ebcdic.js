@@ -1,5 +1,4 @@
-const map = new Map();
-map.set('C6', 46);
+import {map} from './map';
 
 class EBCDIC {
   toASCII(ebcdicCode) {
