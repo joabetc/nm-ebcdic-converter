@@ -2,11 +2,11 @@ const map = new Map();
 map.set('C6', 46);
 
 class EBCDIC {
-  toASCII(char) {
-    if (char.length > 2) {
+  toASCII(ebcdicCode) {
+    if (ebcdicCode.length > 2) {
       throw new Error('Invalid char sequence size');
     }
-    return this.getCharFromHex(map.get(char));
+    return this.getCharFromHex(map.get(ebcdicCode));
   }
   fromASCII(char) {
     if (char.length > 1) {
