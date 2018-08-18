@@ -4,8 +4,9 @@
   "description": "A simple Node module for converting EBCDIC char to ASCII char and vice-versa",
   "private": true,
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "test": "mocha"
+    "build": "webpack --config webpack.config.js",
+    "test": "mocha",
+    "prepublish": "npm test && npm run build"
   },
   "keywords": [
     "Node",
