@@ -9,6 +9,10 @@
     "test": "mocha",
     "prepublish": "npm test && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joabetc/nm-ebcdic-converter.git"
+  },
   "keywords": [
     "Node",
     "EBCDIC",
@@ -16,6 +20,9 @@
   ],
   "author": "Joabe Costa <joabetc@hotmail.com> (http://www.linkedin.com/in/joabecosta)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joabetc/nm-ebcdic-converter/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
