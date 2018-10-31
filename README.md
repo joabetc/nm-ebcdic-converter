@@ -8,3 +8,17 @@ A simple Node module for converting EBCDIC char to ASCII char and vice-versa.
 * [Babel](http://babeljs.io/)
 * [Webpack](https://webpack.js.org/)
 * [Mocha](https://mochajs.org/)
+
+# Usage
+
+For this version use `require`.
+`import` will be provided in the future.
+
+Sample:
+````
+const EBCDIC = require('nm-ebcdic-converter');
+
+var ascii = EBCDIC.toASCII('C6');
+````
+
+Or if you prefer you can play around with [StackBlitz](https://stackblitz.com/edit/nm-ebcdic-converter)
