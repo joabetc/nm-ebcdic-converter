@@ -1,6 +1,6 @@
 {
   "name": "nm-ebcdic-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Node module for converting EBCDIC char to ASCII char and vice-versa",
   "main": "dist/main.js",
   "module": "src/ebcdic.js",
